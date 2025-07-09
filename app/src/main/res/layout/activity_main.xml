@@ -36,7 +36,6 @@
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintWidth_percent="0.7"/>
 
-        <!-- Song Title -->
         <TextView
             android:id="@+id/songTitle"
             android:layout_width="0dp"
@@ -47,9 +46,17 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
             app:layout_constraintTop_toBottomOf="@id/albumArt"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
+
 
         <!-- Artist Name -->
         <TextView
